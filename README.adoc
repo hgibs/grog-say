@@ -2,7 +2,7 @@
 
 > grug brain developer not so smart
 
-grugbrain.dev
+https://grugbrain.dev[grugbrain.dev]
 
 == grug brain sayings
 
@@ -14,7 +14,7 @@ much click and clack make magic happen!
 === smash smash breezy
 you can have magic without click and clack
 
-you go {https://github.com/hgibs/grug-say/releases}[nice smell pond]
+you go https://github.com/hgibs/grug-say/releases[nice smell pile]
 
 === hard way
 if you want big-rock roll uphill in rainstorm
