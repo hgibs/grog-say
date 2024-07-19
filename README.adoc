@@ -4,6 +4,13 @@
 
 https://grugbrain.dev[grugbrain.dev]
 
+[,console]
+----
+$ grugsay
+"grug say prototype early in software making, especially if many big brains"
+ - grugbrain.dev
+----
+
 == grug brain sayings
 
 this tool to remember important thoughts to stay grug brain
