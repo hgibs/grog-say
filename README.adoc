@@ -1,0 +1,40 @@
+= grug-say
+
+> grug brain developer not so smart
+
+grugbrain.dev
+
+== grug brain sayings
+
+this tool to remember important thoughts to stay grug brain
+
+much click and clack make magic happen! 
+
+== how you see magic
+=== smash smash breezy
+you can have magic without click and clack
+
+you go {https://github.com/hgibs/grug-say/releases}[nice smell pond]
+
+=== hard way
+if you want big-rock roll uphill in rainstorm
+
+[,bash]
+----
+git clone https://github.com/hgibs/grug-say.git
+cargo install --release
+----
+
+== why rust lang
+
+this grug brain developer want single binary, grug brain like "rust" clickety clack speak
+
+this grug brain developer no want shiny rock
+
+no shiny rock, no complain or grug get club
+
+== paper let you use magic
+
+grug hear other grug brain make paper so no clubbing
+
+other grug brain peoples say "MIT License"
