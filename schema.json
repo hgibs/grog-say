@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hgibs/grug-say/schema.json",
+  "title": "Main data",
+  "description": "Desired format for all quotes",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "quote": {
+        "type": "string"
+      },
+      "author": {
+        "type": "string"
+      }
+    },
+    "required": [ "quote", "author" ]
+  }
+}
