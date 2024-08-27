@@ -7,3 +7,7 @@ authors = ["Holland Gibson (self aware smol brain) <dev@hollandgibson.com>"]
 [dependencies]
 serde = { version = "1.0.204", features = ["derive"] }
 serde_json = "1.0.120"
+
+[dev-dependencies]
+log = "0.4.22"
+
