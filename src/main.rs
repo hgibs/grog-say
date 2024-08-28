@@ -1,3 +1,5 @@
+use rand::prelude::*;
+use rand::Rng;
 use serde::Deserialize;
 use std::fmt::Debug;
 use std::fs;
@@ -15,24 +17,24 @@ impl Quote {
 }
 
 fn main() {
-    let default_case = Quote {
-        message: "grug say prototype early in software making, especially if many big brains"
-            .to_string(),
-        author: "grugbrain.dev".to_string(),
-    };
-
-    println!("{}", default_case.formatted())
+    let quotes = load_quotes_file("quotes.json");
+    let mut small_rng = SmallRng::from_entropy();
+    let selected_quote = pick_element(&quotes, &mut small_rng);
+    println!("{}", selected_quote.formatted())
 }
 
 fn load_quotes_file(file_path: &str) -> Vec<Quote> {
     let file_contents = fs::read_to_string(file_path)
         .expect(format!("Problem opening the file: {}", file_path).as_str());
-    println!("{}", file_contents);
-
     match serde_json::from_str(file_contents.as_str()) {
         Ok(result) => result,
         Err(error) => panic!("Problem deserializing the json: {error:?}"),
     }
+}
+
+fn pick_element<T: Clone>(list: &Vec<T>, random_gen: &mut SmallRng) -> T {
+    let el_idx = random_gen.gen_range(0..list.len());
+    list[el_idx].clone()
 }
 
 #[cfg(test)]
